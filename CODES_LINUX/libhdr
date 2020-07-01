@@ -1,0 +1,232 @@
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define true 1
+#define false 0
+#define infinity 999999
+#define pi 3.1415927
+#define maxranges 5                    /* for numerical integration */
+#define maxsimpsonpoints 1025          /* change genlib.c if these changed */
+
+struct acc
+{
+   int n;
+   double sum;
+   double sumsq;
+   int n2;
+   double sum2;
+   double sumsq2;
+};
+
+struct covacc
+{
+   int n;
+   double sumxy, sumx, sumy, sumx2, sumy2;
+};
+
+
+extern long seed;
+
+extern long rseed;
+
+extern int tracelevel;
+
+extern int inputcounter;
+
+extern initcovacc();
+
+extern covaccum();
+
+extern double covariance();
+
+extern double correlation();
+
+extern float ranqd2();
+
+extern double uniform();
+
+extern initacc(struct acc *a);
+
+extern accum(struct acc *a, double x);
+
+extern double accmean(struct acc *a);
+
+extern double accsum(struct acc *a);
+
+extern double variance(struct acc *a);
+
+extern getseed();
+
+extern getseedquick();
+
+extern writeseed();
+
+extern double normal();
+
+extern quicknormal();
+
+extern double doublegamma();
+
+extern wishart();
+
+extern bivnormal();
+
+extern cubenormal();
+
+extern double se();
+ 
+extern printmse();
+
+extern printmsd();
+
+extern printmsefile();
+
+extern gabort();
+
+extern generatepoissontable ();
+
+extern int poisson ();
+
+extern int binarysearchcumulative();
+
+extern int discrete();
+
+extern int samplewithoutreplacement();
+
+extern trap();
+
+extern getint();
+
+extern getintandskip();
+
+extern printint ();
+
+extern double se2();
+
+extern printmse2();
+
+extern printtail();
+
+extern acc2umulate ();
+
+extern double acc2umulatedmean();
+
+extern double acc2umulatedvariance();
+
+extern int cointoss();
+
+extern printline ();
+
+extern spaces();
+
+extern getrealandskip();
+
+extern double calculaterealmean();
+
+extern tracestart();
+
+extern trace();
+
+extern outputrep();
+
+extern dummystart();
+
+extern dummyinput();
+
+extern double normalheight();
+
+extern double simpson();
+
+extern int odd();
+
+extern int solvequadratic();
+
+extern skiptoendofline();
+
+extern double aitken();
+
+extern int factorial();
+
+extern double logfactorial();
+
+extern double doublefactorial();
+
+extern double gammaht();
+
+extern double gammaalpha();
+
+extern double numericalinteg();
+
+extern FILE *openforread(char *str);
+
+extern double gamdev(int ia, double epsilon);
+
+extern double series_gamma(double beta);
+
+extern quadratic_regression(double n, double sumx, double sumx2, double sumy,
+  double sumx3, double sumxy, double sumx4, double sumx2y,
+  double *b1, double *b2, double *b3);
+
+extern int findtext(char *s, FILE *inptr);
+
+
+/* ***************************************************************************************** */
+/* ***************************************************************************************** */
+/* ****************************** nrutil.h ************************************************* */
+/* ***************************************************************************************** */
+/* ***************************************************************************************** */
+
+
+#ifndef _NR_UTILS_H_
+#define _NR_UTILS_H_
+
+static float sqrarg;
+#define SQR(a)  ((sqrarg=(a))==0.0?0.0:sqrarg*sqrarg)
+static double dsqrarg;
+#define DSQR(a)  ((dsqrarg=(a))==0.0?0.0:dsqrarg*dsqrarg)
+static double dmaxarg1,dmaxarg2;
+#define DMAX(a,b) (dmaxarg1=(a),dmaxarg2=(b),(dmaxarg1)>(dmaxarg2)?(dmaxarg1):(dmaxarg2))
+static double dminarg1,dminarg2;
+#define DMIN(a,b) (dminarg1=(a),dminarg2=(b),(dminarg1)>(dminarg2)?(dminarg1):(dminarg2))
+static float maxarg1,maxarg2;
+#define FMAX(a,b) (maxarg1=(a),maxarg2=(b),(maxarg1)>(maxarg2)?(maxarg1):(maxarg2))
+static float minarg1,minarg2;
+#define FMIN(a,b) (minarg1=(a),minarg2=(b),(minarg1)>(minarg2)?(minarg1):(minarg2))
+static long lmaxarg1,lmaxarg2;
+#define LMAX(a,b) (lmaxarg1=(a),lmaxarg2=(b),(lmaxarg1)>(lmaxarg2)?(lmaxarg1):(lmaxarg2))
+static long lminarg1,lminarg2;
+#define LMIN(a,b) (lminarg1=(a),lminarg2=(b),(lminarg1)>(lminarg2)?(lminarg1):(lminarg2))
+static int imaxarg1,imaxarg2;
+#define IMAX(a,b) (imaxarg1=(a),imaxarg2=(b),(imaxarg1)>(imaxarg2)?(imaxarg1):(imaxarg2))
+static int iminarg1,iminarg2;
+#define IMIN(a,b) (iminarg1=(a),iminarg2=(b),(iminarg1)>(iminarg2)?(iminarg1):(iminarg2))
+
+#define SIGN(a,b) ((b)>0.0?fabs(a):-fabs(a))
+void nrerror(char error_text[]);
+float *vector(long nl,long nh);
+int *ivector(long nl,long nh);
+unsigned char *cvector(long nl,long nh);
+unsigned long *lvector(long nl,long nh);
+double *dvector(long nl,long nh);
+float **matrix(long nrl,long nrh,long ncl,long nch);
+double **dmatrix(long nrl,long nrh,long ncl,long nch);
+int **imatrix(long nrl,long nrh,long ncl,long nch);
+float **submatrix(float **a,long oldrl,long oldrh,long oldcl,long oldch,long newrl,long newcl);
+float **convert_matrix(float **a,long nrl,long nrh,long ncl,long nch);
+float **f3tensor(long nrl,long nrh,long ncl,long nch,long ndl,long ndh);
+void free_vector(float *v,long nl, long nh);
+void free_ivector(int *v,long nl, long nh);
+void free_cvector(unsigned char *v,long nl, long nh);
+void free_lvector(unsigned long *v,long nl, long nh);
+void free_dvector(double *v,long nl, long nh);
+void free_matrix(float **m,long nrl,long nrh,long ncl,long nch);
+void free_dmatrix(double **m,long nrl,long nrh,long ncl,long nch);
+void free_imatrix(int **m,long nrl,long nrh,long ncl,long nch);
+void free_submatrix(float **b,long nrl,long nrh,long ncl,long nch);
+void free_convert_matrix(float **b,long nrl,long nrh,long ncl,long nch);
+void free_f3tensor(float **t,long nrl,long nrh,long ncl,long nch,long ndl, long ndh);
+
+#endif
+
