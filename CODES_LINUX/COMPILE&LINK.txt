@@ -1,0 +1,9 @@
+
+time cc -o LD_SNP_REAL3 -w -O -static LD_SNP_REAL3.c genlib.c -lm
+time cc -o SUMM_REP_CHROM3 -w -O -static SUMM_REP_CHROM3.c genlib.c -lm
+time cc -o MANAGE_CHROMOSOMES2 -w -O -static MANAGE_CHROMOSOMES2.c genlib.c -lm
+
+g++ -std=gnu++0x -static GONE.cpp
+mv a.out GONE 
+g++ -std=gnu++0x -static GONEaverage.cpp
+mv a.out GONEaverage 
