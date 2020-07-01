@@ -1,0 +1,19 @@
+Mac OSX instrucions:
+
+COMPILE
+gcc -c genlib.c
+gcc -c -static LD_SNP_REAL3.c  (COMPILE in the same directory as libhdr)
+gcc -c -static MANAGE_CHROMOSOMES2.c  (COMPILE in the same directory as libhdr)
+gcc -c -static SUMM_REP_CHROM3.c  (COMPILE in the same directory as libhdr)
+
+LINK:
+gcc genlib.o LD_SNP_REAL3.o -lm -o LD_SNP_REAL3
+gcc genlib.o MANAGE_CHROMOSOMES2.o -lm -o MANAGE_CHROMOSOMES2
+gcc genlib.o SUMM_REP_CHROM3.o -lm -o SUMM_REP_CHROM3
+
+COMPILE&LINK:
+c++ -o GONE ./GONE.cpp
+c++ -o GONEaverage ./GONEaverage.cpp
+
+
+
