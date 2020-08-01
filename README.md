@@ -3,3 +3,7 @@ Scripts and programs referred to in the paper "Recent demographic history inferr
 Molecular Biology and Evolution, 2020
 
 Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION Ne PROCEDURE.pdf"
+
+
+# MODIFICATIONS
+01/07/2020   Minor correction in LD_SNP_REAL3.c
