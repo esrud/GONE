@@ -7,4 +7,5 @@ Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION
 
 # MODIFICATIONS
 01/07/2020   Minor correction in LD_SNP_REAL3.c
+
 07/07/2020   Minor modification in INPUT_PARAMETERS_FILE and SCRIPT ESTIMATION Ne PROCEDURE.docx to note that a maximum of 50,000 SNPs are allowed per chromosome.
