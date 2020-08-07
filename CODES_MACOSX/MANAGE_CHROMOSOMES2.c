@@ -2,7 +2,7 @@
 // MANAGE_CHROMOSOMES2.c
 
 #include "libhdr"
-#define CC 100
+#define CC 200
 #define SS 1000000
 
 int maxNSNP, x, i, c, s, k, NCHR, NIND, snp_nchrom[CC], ranSNP[CC][SS];
@@ -17,7 +17,7 @@ main()
 
 	srand(time(0));
 	seed = rand();
-	getintandskip("maxNSNP :",&maxNSNP, -99, 50000);
+	getintandskip("maxNSNP :",&maxNSNP, -99, 100000);
 
 	// ******************** Read NCHR, NIND and NSNP ******************** 
 
