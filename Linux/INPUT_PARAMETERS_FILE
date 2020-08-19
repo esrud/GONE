@@ -10,7 +10,7 @@ NBIN=400  ### Number of bins (e.g. 1000, so that each bin includes NGEN/NBIN gen
 MAF=0.0   ### Minimum allele frequency (0-1)
 ZERO=1    ### 0: Remove SNPs with zeroes (1: allow for them)
 maxNCHROM=-99  ### Maximum number of chromosomes to be analysed (-99 = all chromosomes; maximum number is 200)
-maxNSNP=100000 ### Maximum approx number of SNPs per chromosomes to be analysed
+maxNSNP=50000 ### Maximum approx number of SNPs per chromosomes to be analysed (max is 100000)
 hc=0.05   ### Maximum value of c analysed
 REPS=40   ### Number of replicates to RUN GONE
 threads=-99  ### Number of threads (if -99 it uses all possible processors)
