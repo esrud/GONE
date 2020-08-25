@@ -10,4 +10,4 @@ Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION
 
 07/07/2020   Minor modification in MANAGE_CHROMOSOMES2.c, INPUT_PARAMETERS_FILE and SCRIPT ESTIMATION Ne PROCEDURE.docx to note that a maximum of 100,000 SNPs are allowed per chromosome. A maximum number of 200 chromosomes and a maximum number of 1800 individuals are allowed.
 
-25/08/2020   Minor modification in INPUT_PARAMETERS_FILE and SCRIPT ESTIMATION Ne PROCEDURE.docx to note that the option cMMb=0 (for human data) does not hold. If the .map file has genetic distances (second column), these will be used. If that column has zeroes (no genetic distances are available) then an average rate of recombination of cMMb (as included in the INPUT_PARAMETERS_FILE) will be assumed.
+25/08/2020   Minor modification in INPUT_PARAMETERS_FILE and SCRIPT ESTIMATION Ne PROCEDURE.docx to note that the option cMMb=0 (for human data) does not hold. If the .map file has genetic distances (third column), these will be used. If that column has zeroes (no genetic distances are available) then an average rate of recombination of cMMb (as included in the INPUT_PARAMETERS_FILE) will be assumed.
