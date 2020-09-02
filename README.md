@@ -13,4 +13,4 @@ Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION
 25/08/2020   Minor modification in INPUT_PARAMETERS_FILE and SCRIPT ESTIMATION Ne PROCEDURE.docx to note that the option cMMb=0 (for human data) does not hold. If the .map file has genetic distances (third column), these will be used. If that column has zeroes (no genetic distances are available) then an average rate of recombination of cMMb (as included in the INPUT_PARAMETERS_FILE) will be assumed.
 
 # ALERTS
-The string "-9" in the phenotypic column of the ped file is necessary to start the reading of genotypes. So any other string "-9" in the ped file will cause trouble. If you have any string "-9" in some other place, please replace it for, e.g. "_9".
+The string "-9" in the phenotypic column of the ped file is necessary to start the reading of genotypes. So any other string "-9" in the ped file will cause trouble. If you have any string "-9" in some other place, please replace it by, e.g. "_9".
