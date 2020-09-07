@@ -14,3 +14,4 @@ Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION
 
 # ALERTS
 The string "-9" in the phenotypic column of the ped file is necessary to start the reading of genotypes. So any other string "-9" in the ped file will cause trouble. If you have any string "-9" in some other place, please replace it by, e.g. "_9".
+We will fix this problem as soon as possible
