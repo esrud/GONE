@@ -15,8 +15,7 @@ main()
 {
 //	fcheck = fopen ("checkfile","w");
 
-	srand(time(0));
-	seed = rand();
+	getseed();
 	getintandskip("maxNSNP :",&maxNSNP, -99, 100000);
 
 	// ******************** Read NCHR, NIND and NSNP ******************** 
@@ -149,7 +148,8 @@ main()
 	}
 
 	fclose(fped);
-
+	writeseed();
+	
 	return(0);
 }
 
