@@ -91,6 +91,7 @@ echo "DIVIDE .ped AND .map FILES IN CHROMOSOMES"
 echo "DIVIDE .ped AND .map FILES IN CHROMOSOMES" > timefile
 
 ./PROGRAMMES/MANAGE_CHROMOSOMES2>>out<<@
+-99
 $maxNSNP
 @
 
