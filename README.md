@@ -17,3 +17,5 @@ Download the whole directory (Linux or MacOSX) as is and read "SCRIPT ESTIMATION
 13/09/2020   Corrected an error in the function to get random numbers in MANAGE_CHROMOSOMES2.c. Now the file called seedfile is necessary in the running directory to start the random sampling of SNPs within each chromosome. Every time a run is finished the seedfile will be changed automatically.
 
 15/10/2020   Small correction in SCRIPT ESTIMATION Ne PROCEDURE.pdf
+
+26/10/2020   Small correction in script_GONE.sh to generate random seed, and the corresponding modification in SCRIPT ESTIMATION Ne PROCEDURE.pdf
