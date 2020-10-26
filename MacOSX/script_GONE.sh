@@ -90,6 +90,9 @@ rm KK*
 echo "DIVIDE .ped AND .map FILES IN CHROMOSOMES"
 echo "DIVIDE .ped AND .map FILES IN CHROMOSOMES" > timefile
 
+num=$RANDOM
+echo "$num" > seedfile
+
 ./PROGRAMMES/MANAGE_CHROMOSOMES2>>out<<@
 -99
 $maxNSNP
