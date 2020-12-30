@@ -3,7 +3,8 @@ Scripts and programs referred to in the paper "Recent demographic history inferr
 Molecular Biology and Evolution, 2020
 
 # USE
-To use the software please download the whole appropriate directory (Linux or MacOSX). These directories include the scripts and executables of all necessary programmes, an example of data and the manual "SCRIPT ESTIMATION Ne PROCEDURE.pdf"
+To use the software please download the whole appropriate directory (Linux or MacOSX). These directories include the scripts and executables of all necessary programmes, an example of data and the manual "SCRIPT ESTIMATION Ne PROCEDURE.pdf".
+The codes of the programmes are available in the directories CODES, but are not necessary to run the software. 
 
 # MODIFICATIONS
 01/07/2020   Minor correction in LD_SNP_REAL3.c
