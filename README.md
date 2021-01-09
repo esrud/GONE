@@ -20,4 +20,4 @@ The codes of the programmes are available in the directories CODES, but they are
 
 26/10/2020   Small correction in script_GONE.sh to generate random seed, and the corresponding modification in SCRIPT ESTIMATION Ne PROCEDURE.pdf
 
-09/01/2021   Small addition in SCRIPT ESTIMATION Ne PROCEDURE.docx: NOTE: If the population has recent migrants from another population, the estimation of Ne will be biased. A typical artefact to be observed is a very recent drastic drop and a previous increase. This can be partly corrected by using a maximum value of c lower than that recommended above, for example hc=0.01. 
+09/01/2021   Small addition in SCRIPT ESTIMATION Ne PROCEDURE.docx: NOTE: If the population has recent migrants from another population, the estimation of Ne will be biased. A typical artefact observed is a very recent drastic drop and a previous increase (see Fig. 2f of manuscript). This can be partly corrected by using a maximum value of c lower than that recommended above, for example hc=0.01. 
