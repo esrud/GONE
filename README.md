@@ -1,6 +1,5 @@
 # GONE
-Scripts and programs referred to in the paper "Recent demographic history inferred by high-resolution analysis of linkage disequilibrium" by Enrique Santiago, Irene Novo, Antonio F. Pardiñas, María Saura, Jinliang Wang and Armando Caballero. 
-Molecular Biology and Evolution, 2020
+Scripts and programs referred to in the paper "Recent demographic history inferred by high-resolution analysis of linkage disequilibrium" by Enrique Santiago, Irene Novo, Antonio F. Pardiñas, María Saura, Jinliang Wang and Armando Caballero. Molecular Biology and Evolution, 2020 Volume 37, Issue 12, Pages 3642–3653, https://doi.org/10.1093/molbev/msaa169
 
 # USE
 To use the software please download the whole appropriate directory (Linux or MacOSX). These directories include the scripts and executables files of all necessary programmes, an example of data and the manual "SCRIPT ESTIMATION Ne PROCEDURE.pdf".
