@@ -17,6 +17,8 @@ The codes of the programmes are available in the directories CODES, but they are
 
 13/09/2020   Corrected an error in the function to get random numbers in MANAGE_CHROMOSOMES2.c. Now the file called seedfile is necessary in the running directory to start the random sampling of SNPs within each chromosome. Every time a run is finished the seedfile will be changed automatically.
 
-15/10/2020   Small correction in SCRIPT ESTIMATION Ne PROCEDURE.pdf
+15/10/2020   Small correction in SCRIPT ESTIMATION Ne PROCEDURE.docx
 
 26/10/2020   Small correction in script_GONE.sh to generate random seed, and the corresponding modification in SCRIPT ESTIMATION Ne PROCEDURE.pdf
+
+09/01/2021   Small addition in SCRIPT ESTIMATION Ne PROCEDURE.docx: NOTE: If the population has recent migrants from another population, the estimation of Ne will be biased. A typical artefact to be observed is a very recent drastic drop and a previous increase. This can be partly corrected by using a maximum value of c lower than that recommended above, for example hc=0.01. 
