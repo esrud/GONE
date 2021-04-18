@@ -21,3 +21,5 @@ The codes of the programmes are available in the directories CODES, but they are
 26/10/2020   Small correction in script_GONE.sh to generate random seed, and the corresponding modification in SCRIPT ESTIMATION Ne PROCEDURE.pdf
 
 09/01/2021   Small addition in SCRIPT ESTIMATION Ne PROCEDURE.docx: NOTE: If the population has recent migrants from another population, the estimation of Ne will be biased. A typical artefact observed is a very recent drastic drop and a previous increase (see Fig. 2f of manuscript). This can be partly corrected by using a maximum value of c lower than that recommended above, for example hc=0.01. 
+
+18/04/2021   Modification of programmes LD_SNP_REAL3.c and SUMM_REP_CHROM3.c to calculate the deviation from Hardy-Weinberg proportions for the population from the sample estimate. These estimates are now shown in the PARAMETERS output. If the value for the population is positive and substantial (say > 0.02), this may imply certain adxmixture in your sample, and some artefacts, such as a sudden recent drop in Ne, may be found.
