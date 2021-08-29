@@ -25,3 +25,5 @@ The codes of the programmes are available in the directories CODES, but they are
 18/04/2021   Modification of programmes LD_SNP_REAL3.c and SUMM_REP_CHROM3.c to calculate the deviations from Hardy-Weinberg proportions (Wrigth's Fis). Estimates for the sample and for the population are now shown in the outfileHWD output file. If the estimate for the population substantialy deviates from the expected 0 value of a panmictic population (say Fis > 0.02 or Fis < -0.02), this may imply certain adxmixture in your sample and some artefacts, tipically a sudden recent drop in Ne, may be found.
 
 21/06/2021   New USER´S GUIDE which substitutes the old SCRIPT ESTIMATION Ne PROCEDURE.docx
+
+29/08/2021   Modification of the USER´S GUIDE to warn that if you make different runs of the script to consider different random subsets of SNPs, do not sent all runs at the same time, as the initial random seed is taken from the computer clock time.
