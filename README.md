@@ -27,3 +27,6 @@ The codes of the programmes are available in the directories CODES, but they are
 21/06/2021   New USER´S GUIDE which substitutes the old SCRIPT ESTIMATION Ne PROCEDURE.docx
 
 29/08/2021   Modification of the USER´S GUIDE to warn that if you make different runs of the script to consider different random subsets of SNPs, do not sent all runs at the same time, as the initial random seed is taken from the computer clock time.
+
+10/04/2022   A tutorial for GONE has been added.
+
