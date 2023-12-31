@@ -1,6 +1,11 @@
 # GONE
 Scripts and programs referred to in the paper "Recent demographic history inferred by high-resolution analysis of linkage disequilibrium" by Enrique Santiago, Irene Novo, Antonio F. Pardiñas, María Saura, Jinliang Wang and Armando Caballero. Molecular Biology and Evolution, 2020 Volume 37, Issue 12, Pages 3642–3653, https://doi.org/10.1093/molbev/msaa169
 
+Articles showing the impact of population structuring and other factors on GONE performance:
+
+Novo I, Pérez-Pereira N, Santiago E, Quesada H, Caballero A. An empirical test of the estimation of historical effective population size using Drosophila melanogaster. Mol Ecol Resour. 2023 Oct;23(7):1632-1640. doi: 10.1111/1755-0998.13837.
+Novo I, Ordás P, Moraga N, Santiago E, Quesada H, Caballero A. Impact of population structure in the estimation of recent historical effective population size by the software GONE. Genet Sel Evol. 2023 Dec 4;55(1):86. doi: 10.1186/s12711-023-00859-2.
+
 # USE
 To use the software please download the whole appropriate directory (Linux or MacOSX). These directories include the scripts and executables files of all necessary programmes. See USER´S GUIDE.
 The codes of the programmes are available in the directories CODES, but they are not necessary to run the software. 
