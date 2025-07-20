@@ -680,8 +680,8 @@ LD()
 			}
 			else
 			{
-				if (b <= 5) fprintf(fout,"%lld %f %f %d %f %f\n", n_[b], cc_[b], d2_[b], 2*b, D2_[b], VV_[b]);
-				else fprintf(fout,"%lld %f %f %d %f %f\n", n_[b], cc_[b], d2_[b], ((NGEN/NBIN)*(b-5))+10, D2_[b], VV_[b]);
+				if (b <= 5) fprintf(fout,"%lld %11.9f %11.9f %d %f %f\n", n_[b], cc_[b], d2_[b], 2*b, D2_[b], VV_[b]);
+				else fprintf(fout,"%lld %11.9f %11.9f %d %f %f\n", n_[b], cc_[b], d2_[b], ((NGEN/NBIN)*(b-5))+10, D2_[b], VV_[b]);
 			}
 		}
 
