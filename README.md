@@ -36,3 +36,5 @@ The codes of the programmes are available in the directories CODES, but they are
 30/07/2022   A tutorial for GONE has been added.
 
 20/07/2025   A modification has been made to the programme LD_SNP_REAL3 to increase precision in the d^2 values from chromosomes.
+
+12/05/2026   Further modifications to increase precision in the d^2 values from chromosomes.
